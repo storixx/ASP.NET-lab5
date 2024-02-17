@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Check Cookie";
+}
+
+<h2>Cookie Value</h2>
+@if (ViewData["CookieValue"] != null)
+{
+    <p>Cookie Value: @ViewData["CookieValue"]</p>
+}
+else
+{
+    <p>No cookie found.</p>
+}
